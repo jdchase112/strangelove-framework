@@ -1,0 +1,23 @@
+/* ------------------------
+------ GLOBAL RESETS ------
+------------------------ */
+
+/* SET INITIAL BOX SIZING TO IGNORE PADDING AND BORDER WIDTH */
+* {
+    box-sizing: border-box;
+}
+
+/* REMOVE DEFAULT MARGIN FROM THE BODY */
+body {
+    margin: 0;
+}
+
+/* ENABLE SMOOTH SCROLLING */
+html {
+    scroll-behavior: smooth;
+}
+
+/* OFFSET ANCHOR TARGET FOR INLINE LINKS */
+:target {
+    scroll-margin-top: 1em;
+}

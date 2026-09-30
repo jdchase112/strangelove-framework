@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Base</title>
+
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            <h1><a href="index.html">Simple Base</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="styleguide.html">Style Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Hero Headline</h1>
+            <h2>Hero Subheadline</h2>
+            <p>Hero description text goes here</p>
+            <button>Button</button>
+        </section>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#responsive-media">Responsive Media</a></li>
+                    <li><a href="#grid-system">Grid System</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section>
+            <div class="container">
+                <h2>Section Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit doloribus voluptates magnam
+                    nulla quod adipisci unde dolores ut. Ad, vitae dicta eaque debitis inventore accusamus deleniti ut
+                    culpa
+                    earum ipsum impedit quas ipsa praesentium laborum quasi iure minima? Odit nulla dolores suscipit at,
+                    distinctio sunt sed nesciunt voluptas et.</p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 id="typography">Typography</h2>
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit doloribus voluptates magnam
+                    nulla quod adipisci unde dolores ut. Ad, vitae dicta eaque debitis inventore accusamus deleniti ut
+                    culpa
+                    earum ipsum impedit quas ipsa praesentium laborum quasi iure minima? Odit nulla dolores suscipit at,
+                    distinctio sunt sed nesciunt voluptas et.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit doloribus voluptates magnam
+                    nulla quod adipisci unde dolores ut. Ad, vitae dicta eaque debitis inventore accusamus deleniti ut
+                    culpa
+                    earum ipsum impedit quas ipsa praesentium laborum quasi iure minima? Odit nulla dolores suscipit at,
+                    distinctio sunt sed nesciunt voluptas et.</p>
+                <h2>Heading 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit doloribus voluptates magnam
+                    nulla quod adipisci unde dolores ut. Ad, vitae dicta eaque debitis inventore accusamus deleniti ut
+                    culpa
+                    earum ipsum impedit quas ipsa praesentium laborum quasi iure minima? Odit nulla dolores suscipit at,
+                    distinctio sunt sed nesciunt voluptas et.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit doloribus voluptates magnam
+                    nulla quod adipisci unde dolores ut. Ad, vitae dicta eaque debitis inventore accusamus deleniti ut
+                    culpa
+                    earum ipsum impedit quas ipsa praesentium laborum quasi iure minima? Odit nulla dolores suscipit at,
+                    distinctio sunt sed nesciunt voluptas et.</p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 id="responsive-media">Responsive Media</h2>
+                <h3>Responsive IMG</h3>
+                <img src="media/placeholder3200x1800.jpg" width="3200" height="1800" alt="placeholder">
+                <h3>Responsive SVG</h3>
+                <img src="media/placeholder3200x1800.svg" width="3200" height="1800" alt="placeholder">
+                <h3>Responsive Inline SVG</h3>
+                <svg width="3200" height="1800" viewBox="0 0 3200 1800" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="3200" height="1800" fill="#8b8b8b" />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="100"
+                        fill="#fff">Inline
+                        SVG</text>
+                </svg>
+                <h3>Responsive Video w/ Controls</h3>
+                <video width="1920" height="1080" controls>
+                    <source src="media/placeholder1920x1080.mp4" type="video/mp4">
+                </video>
+                <pre>
+<code>
+&lt;video controls&gt;
+&lt;source src="media/placeholder1920x1080.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+</code>
+</pre>
+                <h3>Looping Video</h3>
+                <video width="3200" height="1800" muted autoplay loop>
+                    <source src="media/placeholder1920x1080.mp4" type="video/mp4">
+                </video>
+                <pre>
+<code>
+&lt;video muted autoplay loop&gt;
+&lt;source src="media/placeholder1920x1080.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+</code>
+</pre>
+            </div>
+        </section>
+        <section>
+            <div class="demo">
+                <h2 id="grid-system">Grid System </h2>
+                <h3> Semantic Grid System</h3>
+
+                <div class="row">
+                    <div class="one-fourth">
+                        <h3>&frac14;</h3>
+                    </div>
+                    <div class="three-fourths">
+                        <h3>&frac34;</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="one-third">
+                        <h3>&frac13;</h3>
+                    </div>
+                    <div class="two-thirds">
+                        <h3>&frac23;</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="one-half">
+                        <h3>&frac12;</h3>
+                    </div>
+                    <div class="one-half">
+                        <h3>&frac12;</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="one-whole">
+                        <h3>1</h3>
+                    </div>
+                </div>
+
+                <h3>Semantic Centered</h3>
+
+                <div class="row">
+                    <div class="two-thirds centered">
+                        <h3>&frac23;</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="one-half centered">
+                        <h3>&frac12;</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="one-third centered">
+                        <h3>&frac13;</h3>
+                    </div>
+                </div>
+
+                <h3>12 Column Grid System</h3>
+
+                <div class="row">
+                    <div class="col-1">
+                        <h3>1</h3>
+                    </div>
+                    <div class="col-11">
+                        <h3>11</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <h3>2</h3>
+                    </div>
+                    <div class="col-10">
+                        <h3>10</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <h3>3</h3>
+                    </div>
+                    <div class="col-9">
+                        <h3>9</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <h3>4</h3>
+                    </div>
+                    <div class="col-8">
+                        <h3>8</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-5">
+                        <h3>5</h3>
+                    </div>
+                    <div class="col-7">
+                        <h3>7</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <h3>6</h3>
+                    </div>
+                    <div class="col-6">
+                        <h3>6</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h3>12</h3>
+                    </div>
+                </div>
+
+                <h3>12-Col Centered</h3>
+
+                <div class="row">
+                    <div class="col-10 centered">
+                        <h3>10</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8 centered">
+                        <h3>8</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 centered">
+                        <h3>6</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4 centered">
+                        <h3>4</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2 centered">
+                        <h3>2</h3>
+                    </div>
+                </div>
+
+                <h3>Pushes</h3>
+
+                <div class="row">
+                    <div class="push-1">
+                        <h3>1</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="push-2">
+                        <h3>2</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="push-3">
+                        <h3>3</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="push-4">
+                        <h3>4</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="push-5">
+                        <h3>5</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="push-6">
+                        <h3>6</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="push-7">
+                        <h3>7</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="push-8">
+                        <h3>8</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="push-9">
+                        <h3>9</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="push-10">
+                        <h3>10</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="logo">
+            <h2><a href="index.html">Simple Base</a></h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="styleguide.html">Style Guide</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- MAIN JS FILE -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

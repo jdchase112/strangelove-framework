@@ -1,0 +1,26 @@
+.card {
+
+    /* LOCAL VARIABLES */
+    --card-background-color: #ddd;
+    --card-text-color: black;
+
+    background-color: var(--card-background-color);
+    color: var(--card-text-color);
+
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: var(--unit-small) var(--unit-medium) var(--unit-medium);
+    margin-block: var(--unit-small);
+    
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--unit-medium);
+
+    & > .card {
+        margin-block: 0;
+    }
+
+}

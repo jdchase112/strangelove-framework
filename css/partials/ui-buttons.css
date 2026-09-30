@@ -1,0 +1,21 @@
+/* --------------------- 
+------ UI BUTTONS ------
+--------------------- */
+
+/* BUTTON CLASS */
+.button {
+
+    display: inline-block;
+    background-color: var(--link-color, black);
+    border-radius: 9px;
+    padding-inline: 0.8em;
+    padding-block: 0.6em;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--link-color-hover, black);
+        color: white;
+    }
+
+}

@@ -1,0 +1,42 @@
+/* ------------------------------------------- 
+------ CSS PARTIALS & TABLE OF CONTENTS ------
+------------------------------------------- */
+
+/* GLOBAL VARIABLES */
+@import url(partials/global-variables.css);
+/* --- UI COLORS, LINK COLORS, FONT FAMILIES */
+
+/* GLOBAL RESETS */
+@import url(partials/global-resets.css);
+/* --- BORDER BOX. REMOVE MARGIN, SMOOTH SCROLLING */
+
+/* GLOBAL COLORS */
+@import url(partials/global-colors.css);
+/* --- MAIN BACKGROUND COLOR, MAIN TEXT COLOR, LINK COLOR, LINK COLOR ON HOVER */
+
+/* GLOBAL TYPOGRAPHY */
+@import url(partials/global-typography.css);
+/* --- GLOBAL FONT SIZE & LINE HEIGHT, HEADING FONT FAMILY & WEIGHT, HEADING 1-3 STYLING, PARAGRAPH STYLING */
+
+/* GLOBAL MEDIA */
+@import url(partials/global-media.css);
+/* --- RESPONSIVE IMAGES, SVGS, AND VIDEOS */
+
+/* GLOBAL CONTAINERS */
+@import url(partials/global-containers.css);
+/* --- CONTAINER CLASS */
+
+/* GLOBAL GRID */
+@import url(partials/global-grid.css);
+/* --- GLOBAL 12 COLUMN GRID SYSTEM */
+
+/* GLOBAL HELPERS */
+@import url(partials/global-helpers.css);
+/* --- HORIZONTAL RULES HELPER */
+
+/* STRUCTURE */
+@import url(partials/structure.css);
+
+/* COMPONENTS */
+@import url(partials/ui-buttons.css);
+@import url(partials/ui-cards.css);

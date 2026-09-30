@@ -1,0 +1,24 @@
+/* ----------------------------
+------ GLOBAL CONTAINERS ------
+---------------------------- */
+
+.container-1000 {
+    width: 100%;
+    max-width: 1000px;
+    margin-inline: auto;
+    padding-inline: 1em;
+}
+
+.container-1200 {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1em;
+}
+
+.container-1400 {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline: 1em;
+}

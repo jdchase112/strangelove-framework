@@ -1,0 +1,11 @@
+/* -----------------------
+------ GLOBAL MEDIA ------
+----------------------- */
+
+/* MAKE ALL IMAGES AND SVGS RESPONSIVE */
+img,
+svg,
+video {
+    height: auto;
+    max-width: 100%;
+}

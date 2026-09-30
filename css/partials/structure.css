@@ -1,0 +1,307 @@
+/* --------------------
+------ STRUCTURE ------
+--------------------- */
+
+/* SITE HEADER STYLING */
+.site-header {
+  background-color: var(--site-header-background-color, white);
+  padding: var(--unit-small);
+  gap: var(--unit-small);
+
+  /* LEFT ALIGN LOGO & RIGHT ALIGN NAV */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* REMOVE UNDERLINE FROM ALL HEADER TEXT LINKS */
+  a {
+    text-decoration: none;
+    color: var(--site-header-text-color, black);
+  }
+
+  /* SITE LOGO */
+  .site-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--unit-small);
+
+    h1 {
+      /* CONTROL LOGO TEXT SIZE & REMOVE MARGIN AND PADDING */
+      font-size: 1.5em;
+      margin: 0;
+      padding: 0;
+      margin-top: 0.15em;
+    }
+  }
+
+  /* SITE NAV */
+  .site-nav {
+    font-family: var(--font-headings);
+
+    /* SEE BELOW FOR SITE NAV STYLING */
+
+  }
+
+}
+
+/* SITE NAV DESKTOP STYLING */
+.site-nav {
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1em;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-button {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+}
+
+/* SITE NAV MOBILE STYLING */
+:root {
+  --top-line-translation: 20% 0%;
+  --bot-line-translation: -35% 30%;
+}
+
+.site-nav.mobile-menu {
+
+  @media (width > 768px) {
+
+  }
+
+  @media (width <= 768px) {
+
+  /* MENU BUTTON */
+  .menu-button {
+    position: absolute;
+    top: 1.5em;
+    right: var(--unit-small);
+    left: auto;
+    z-index: 100;
+    scale: 0.9;
+
+    /* REMOVE DEFAULT BUTTON STYLING */
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+
+    .menu-button-navicon {
+     > * {
+        transition-origin: center;
+      }
+
+      &.rotate-to-x {
+        * { transition: all .1s ease-out; }
+      }
+      
+       &.squish-to-x {
+
+        --squish-duration: .4s;
+
+        .top-line {
+          animation: navicon-squish-top-close var(--squish-duration) forwards;
+        }
+        .mid-line {
+          opacity: 1;
+          transition: opacity .1s linear calc(var(--squish-duration) / 2);  
+        }
+        .bot-line {
+          animation: navicon-squish-bottom-close var(--squish-duration) forwards;  
+        }
+        
+      }
+
+    }
+
+    /* HIDE MENU BUTTON TEXT */
+    .menu-button-text {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+  }
+
+  ul {
+
+    /* MAKE NAV ITEMS DISPLAY SIDE BY SIDE */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: end;
+
+    /* HIDE NAV LINKS ON SMALL SCREENS */
+    top: 0;
+    left: 0;
+
+    /* OPEN NAV STYLING */
+    z-index: 1;
+    position: fixed;
+    top: -100%;
+    display: block;
+    background-color: var(--site-header-background-color, white);
+    width: 100%;
+    height: 100svh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    translate: 0 0;
+    transition: all 1s cubic-bezier(0.25, 1, 0, 1);
+    
+  }
+
+  &[data-navstate="open"] {
+    .menu-button {
+      position: fixed;
+    }
+
+    .menu-button-navicon {
+      .top-line {
+        rotate: 45deg;
+        translate: var(--top-line-translation);
+      }
+
+      .mid-line {
+        opacity: 0;
+      }
+
+      .bot-line {
+        rotate: -45deg;
+        translate: var(--bot-line-translation);
+      }
+
+      &.squish-to-x {
+
+        --squish-duration: .4s;
+
+        .top-line {
+          animation: navicon-squish-top-open var(--squish-duration) linear forwards; 
+        }
+        .mid-line {
+          opacity: 0;
+          transition: opacity .1s linear calc(var(--squish-duration) / 2); 
+        }
+        .bot-line {
+          animation: navicon-squish-bottom-open var(--squish-duration) linear forwards; 
+        }
+        
+      }
+
+    }
+
+    ul {
+      translate: 0 100%;
+    }
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+    
+  }
+
+}
+
+/* NAVICON ANIMATIONS FOR THE SQUISH TO X ANIMATION */
+@keyframes navicon-squish-top-open {
+  0% { translate: 0% 0%; rotate: 0deg;}
+  50% { translate: 0% 41.5%; rotate: 0deg; }
+  75% { translate: 0% 41.5%; rotate: 0deg; }
+  100% { translate: var(--top-line-translation); rotate: 45deg; }
+}
+@keyframes navicon-squish-bottom-open {
+  0% { translate: 0% 0%; rotate: 0deg;}
+  50% { translate: 0% -41.5%; rotate: 0deg;}
+  75% { translate: 0% -41.5%; rotate: 0deg;}
+  100% { translate: var(--bot-line-translation); rotate: -45deg; }
+}
+@keyframes navicon-squish-top-close {
+  0% { translate: var(--top-line-translation); rotate: 45deg; }
+  25% { translate: 0% 41.5%; rotate: 0deg; }
+  50% { translate: 0% 41.5%; }
+  100% { translate: 0 0; }
+}
+@keyframes navicon-squish-bottom-close {
+  0% { translate: var(--bot-line-translation); rotate: -45deg; }
+  25% { translate: 0% -41.5%; rotate: 0deg; }
+  50% { translate: 0% -41.5%; }
+  100% { translate: 0 0; }
+}
+
+/* SITE FOOTER STYLING */
+.site-footer {
+  background-color: var(--site-footer-background-color, white);
+  padding-block: var(--unit-small);
+
+  /* REMOVE UNDERLINE FROM ALL FOOTER TEXT LINKS */
+  a {
+    text-decoration: none;
+    color: var(--site-footer-text-color, black)
+    }
+
+  .footer-nav {
+    font-family: var(--font-headings);
+    color: var(--site-footer-text-color, black);
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+
+  }
+
+}
+
+/* HERO SECTION STYLING */
+.hero {
+  background-color: #ddd;
+  padding-block: var(--unit-large);
+
+}
+
+/* SECTION STYLING */
+section {
+  padding-block: var(--unit-medium);
+}
+
+.sidebar nav {
+  margin-top: 2em;
+
+  /* STICK THE SIDEBAR TO THE TOP ON SCROLL */
+  position: sticky;
+  top: 2em;
+}
+
+section {
+  grid-column: 2 / 3;
+}
+
+.hero {
+  grid-column: 1 / 3;
+}
