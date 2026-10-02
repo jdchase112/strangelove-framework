@@ -40,3 +40,6 @@
 /* COMPONENTS */
 @import url(partials/ui-buttons.css);
 @import url(partials/ui-cards.css);
+
+/* ANIMATION */
+@import url(partials/animation.css);

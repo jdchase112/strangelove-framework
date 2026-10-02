@@ -1,0 +1,125 @@
+/* --------------------
+------ ANIMATION ------
+-------------------- */
+
+/* HERO ANIMATION */
+.hero {
+    animation-name: hero-animate;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    scale: 1 0;
+    transform-origin: top;
+}
+
+@keyframes hero-animate {
+
+    100% {
+        scale: 1 1;
+    }
+
+}
+
+/* FADE IN CLASSES */
+[data-viewstate="active"] .fade-in {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+    /* SET STARTING ANIMATION */
+    opacity: 0;
+
+}
+
+[data-viewstate="active"] .fade-in-from-left {
+    animation-name: fade-in-from-left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+    /* SET STARTING ANIMATION */
+    opacity: 0;
+    translate: -20px 0px;
+
+}
+
+[data-viewstate="active"] .fade-in-from-right {
+    animation-name: fade-in-from-right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+    /* SET STARTING ANIMATION */
+    opacity: 0;
+    translate: 20px 0px;
+
+}
+
+[data-viewstate="active"] .fade-in-from-top {
+    animation-name: fade-in-from-top;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+    /* SET STARTING ANIMATION */
+    opacity: 0;
+    translate: 0px -20px;
+
+}
+
+[data-viewstate="active"] .fade-in-from-bottom {
+    animation-name: fade-in-from-top;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+    /* SET STARTING ANIMATION */
+    opacity: 0;
+    translate: 0px 20px;
+
+}
+
+@keyframes fade-in {
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fade-in-from-left {
+
+    100% {
+        opacity: 1;
+        translate: 0px 0px;
+    }
+
+}
+
+@keyframes fade-in-from-right {
+
+    100% {
+        opacity: 1;
+        translate: 0px 0px;
+    }
+
+}
+
+@keyframes fade-in-from-top {
+
+    100% {
+        opacity: 1;
+        translate: 0px 0px;
+    }
+
+}
+
+@keyframes fade-in-from-bottom {
+
+    100% {
+        opacity: 1;
+        translate: 0px 0px;
+    }
+
+}
