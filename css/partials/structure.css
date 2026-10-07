@@ -152,7 +152,7 @@
     left: 0;
 
     /* OPEN NAV STYLING */
-    z-index: 1;
+    z-index: 50;
     position: fixed;
     top: -100%;
     display: block;
@@ -247,6 +247,14 @@
   50% { translate: 0% -41.5%; }
   100% { translate: 0 0; }
 }
+
+/* FIX WIDTH OF SIE LOGO ON SMALL SCREENS */
+@media (width <= 768px) {
+  .site-header:has(.mobile-menu) .site-logo {
+    max-width: calc(100% - 3em);
+  }
+}
+
 
 /* SITE FOOTER STYLING */
 .site-footer {

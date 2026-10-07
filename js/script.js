@@ -1,15 +1,8 @@
-console.log("script.js is loaded");
 
-const siteNav = document.querySelector('.site-nav');
-const menuButton = document.querySelector('.menu-button');
 
-menuButton.onclick = () => {
-    if (siteNav.getAttribute('data-navstate') === 'open') {
-        siteNav.setAttribute('data-navstate', 'closed')
-    } else {
-        siteNav.setAttribute('data-navstate', 'open')
-    };
-}
+// IMPORT WEB COMPONENTS
+import "../components/site-header.js";
+import "../components/site-footer.js";
 
 // ENABLE SCROLL TRIGGERED ANIMATIONS
 const myobserver = new IntersectionObserver((entries) => {
@@ -22,7 +15,7 @@ const myobserver = new IntersectionObserver((entries) => {
     });
 });
 
-const mytargets = document.querySelectorAll('header, section, footer');
+const mytargets = document.querySelectorAll('header, section, footer, .animate-on-scroll');
 mytargets.forEach((el) => {
     myobserver.observe(el);
 });
