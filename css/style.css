@@ -44,3 +44,60 @@
 
 /* ANIMATION */
 @import url(partials/animation.css);
+
+/* -------------------------
+------ CUSTOM STYLING ------
+-------------------------- */
+
+/* SPLASH SCREEN */
+
+.splash-screen {
+
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100svh;
+  background-color: #0A0C0C;
+
+  /* VERTICAL AND HORIZONTAL CENTERING */
+  display: grid;
+  place-items: center;
+
+  /* ANIMATION */
+  animation: splash-screen-exit 0.5s ease-out 2s forwards;
+  
+}
+
+@keyframes splash-screen-exit {
+
+    0% {
+        translate: 0;
+        opacity: 1;
+    }
+
+    100% {
+        translate: 0 -100%;
+        opacity: 0;
+    }
+
+}
+
+.splash-screen .splash-logo {
+    animation: splash-logo-enter 0.25s ease-out forwards;
+}
+
+@keyframes splash-logo-enter {
+
+    0% {
+        opacity: 0;
+        scale: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+
+}

@@ -3,11 +3,9 @@ class siteHeader extends HTMLElement {
         this.innerHTML = `
       
       <!-- COMPONENT MARKUP GOES HERE -->
-      <header class="site-header">
+      <header class="site-header header-on-top-of-hero">
         <div class="site-logo">
-            <img class="fade-in" a href="index.html" src="media/logo.svg" width="40" height="40">
-            <h1 class="fade-in"><a href="index.html">Strangelove Cinemas
-                    Framework</a></h1>
+            <a href="index.html"><img class="fade-in" src="media/strangelove-logo.svg" width="200" height="50"></a>
         </div>
         <nav class="site-nav mobile-menu">
             <button class="menu-button">

@@ -5,7 +5,8 @@
 /* SITE HEADER STYLING */
 .site-header {
   background-color: var(--site-header-background-color, white);
-  padding: var(--unit-small);
+  padding-inline: var(--unit-small);
+  padding-block: 1.25em;
   gap: var(--unit-small);
 
   /* LEFT ALIGN LOGO & RIGHT ALIGN NAV */
@@ -61,6 +62,9 @@
   li {
     margin: 0;
     padding: 0;
+    font-family: var(--condensed);
+    font-weight: 600;
+    text-transform: uppercase;
   }
 
   .menu-button {
@@ -100,6 +104,9 @@
     font-size: inherit;
 
     .menu-button-navicon {
+
+      fill: white;
+
      > * {
         transition-origin: center;
       }
@@ -175,6 +182,7 @@
     }
 
     .menu-button-navicon {
+
       .top-line {
         rotate: 45deg;
         translate: var(--top-line-translation);
@@ -255,6 +263,16 @@
   }
 }
 
+/* HEADER ON TOP OF HERO */
+.header-on-top-of-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+}
+
 
 /* SITE FOOTER STYLING */
 .site-footer {
@@ -288,8 +306,41 @@
 
 /* HERO SECTION STYLING */
 .hero {
-  background-color: #ddd;
-  padding-block: var(--unit-large);
+  background-color: var(--site-hero-background-color);
+  padding-block: 10em;
+  color: var(--site-hero-text-color);
+
+  h1 {
+    font-size: 4.375em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-weight: 500;
+    color: var(--text-color-2);
+    letter-spacing: -1px;
+  }
+
+  .button {
+    margin-top: 1em;
+    font-size: 1.25em;
+  }
+
+}
+
+/* HERO WITH HEADER ON TOP */
+body:has(.header-on-top-of-hero) .hero {
+  padding-top: 11em;
+}
+
+/* CONTENT SECTION STYLING */
+.content {
+
+h2 {
+  color: var(--text-color-2);
+  text-transform: uppercase;
+  font-size: 3.125em;
+}
 
 }
 
@@ -313,3 +364,4 @@ section {
 .hero {
   grid-column: 1 / 3;
 }
+

@@ -5,19 +5,29 @@
 :root {
 
     /* MAIN UI COLORS */
-    --body-background-color: #eeeeee;
+    --body-background-color: #161818;
     --strangelove-background-color: #161818;
-    --body-text-color: #222;
+    --body-text-color: #A9B5B8;
+    --section-heading-text-color: #E1ECEE;
+
+    --text-color-1: #fff;
+    --text-color-2: #E1ECEE;
+    --text-color-3: #D7E3E4;
+    --text-color-4: #C7D1D2;
+    --text-color-5: #A9B5B8;
 
     /* LINK COLORS */
-    --link-color: rgb(55, 0, 255);
-    --link-color-hover: rgb(15, 0, 125);
+    --link-color: #006877;
+    --link-color-hover: #00434d;
 
     /* SANS SERIF FONT FAMILY */
-    --sans-serif: Helvetica, Arial, sans-serif;
+    --sans-serif: "Balto", Helvetica, Arial, sans-serif;
 
     /* SERIF FONT FAMILY*/
-    --serif: Georgia, Times, serif;
+    --serif: "garamond-premier-pro-caption", Georgia, Times, serif;
+
+    /* CONDENSED FONT FAMILY */
+    --condensed: "franklin-gothic-condensed";
 
     /* DEFINE FONTS */
     --font-body: var(--sans-serif);
@@ -31,11 +41,14 @@
     --unit-xlarge: 4rem;
 
     /* SITE STRUCTURE COLORS */
-    --site-header-background-color: #f1f1f1;
-    --site-header-text-color: #000;
+    --site-header-background-color: #161818;
+    --site-header-text-color: #fff;
 
-    --site-footer-background-color: #f1f1f1;
-    --site-footer-text-color: #000;
+    --site-footer-background-color: #0A0C0C;
+    --site-footer-text-color: #fff;
+
+    --site-hero-background-color: #1D2121;
+    --site-hero-text-color: #fff;
 
     --sitenav-drawer-menu-background-color: #eee;
     --sitenav-drawer-menu-text-color: #000;
