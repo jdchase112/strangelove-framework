@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://use.typekit.net/ikn5sqn.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Base</title>
@@ -19,7 +20,28 @@
         </div>
     </div> -->
 
-    <site-header></site-header>
+    <site-header>
+        <header class="site-header header-on-top-of-hero">
+            <div class="site-logo">
+                <a href="index.html"><img class="fade-in" src="media/strangelove-logo.svg" width="200" height="50"></a>
+            </div>
+            <nav class="site-nav mobile-menu">
+                <button class="menu-button">
+                    <svg class="menu-button-navicon rotate-to-x squish-to-x" width="30" height="24">
+                        <rect class="top-line" x="0" y="0" height="4" width="30"></rect>
+                        <rect class="mid-line" x="0" y="10" height="4" width="30"></rect>
+                        <rect class="bot-line" x="0" y="20" height="4" width="30"></rect>
+                    </svg>
+                    <span class="menu-button-text">Menu</span>
+                </button>
+                <ul>
+                    <li class="fade-in"><a href="index.html">Home</a></li>
+                    <li class="fade-in"><a href="style-guide.html">Style Guide</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </site-header>
 
     <main>
         <section class="hero">

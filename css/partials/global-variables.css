@@ -28,6 +28,7 @@
 
     /* CONDENSED FONT FAMILY */
     --condensed: "franklin-gothic-condensed";
+    --compressed: "franklin-gothic-urw-comp";
 
     /* DEFINE FONTS */
     --font-body: var(--sans-serif);

@@ -62,8 +62,10 @@
   li {
     margin: 0;
     padding: 0;
-    font-family: var(--condensed);
-    font-weight: 600;
+    font-family: var(--compressed);
+    font-size: 1.25em;
+    font-weight: 700;
+    font-style: normal;
     text-transform: uppercase;
   }
 
