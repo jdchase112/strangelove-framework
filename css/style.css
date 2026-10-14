@@ -40,7 +40,6 @@
 /* COMPONENTS */
 @import url(partials/ui-buttons.css);
 @import url(partials/ui-cards.css);
-@import url(partials/ui-carousel.css);
 
 /* ANIMATION */
 @import url(partials/animation.css);
@@ -66,7 +65,7 @@
   place-items: center;
 
   /* ANIMATION */
-  animation: splash-screen-exit 0.5s ease-out 2s forwards;
+  animation: splash-screen-exit 0.25s ease-out 2s forwards;
   
 }
 
@@ -74,12 +73,10 @@
 
     0% {
         translate: 0;
-        opacity: 1;
     }
 
     100% {
         translate: 0 -100%;
-        opacity: 0;
     }
 
 }

@@ -7,7 +7,7 @@
 }
 
 /* HERO ANIMATION */
-.hero {
+/* .hero {
     --animation-delay: 0s;
     animation-name: hero-animate;
     animation-duration: 0.4s;
@@ -23,7 +23,7 @@
         scale: 1 1;
     }
 
-}
+} */
 
 /* FADE IN CLASSES */
 [data-viewstate="active"] .fade-in {
@@ -132,4 +132,8 @@
         translate: 0px 0px;
     }
 
+}
+
+@view-transition {
+    navigation: auto;
 }

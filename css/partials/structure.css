@@ -335,6 +335,10 @@ body:has(.header-on-top-of-hero) .hero {
   padding-top: 11em;
 }
 
+body:has(.header-on-top-of-hero) .hero:has(.video-bg) {
+  padding-block: 0em;
+}
+
 /* CONTENT SECTION STYLING */
 .content {
 

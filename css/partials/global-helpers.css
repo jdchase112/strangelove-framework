@@ -8,3 +8,37 @@ hr {
     border-top: 1px solid #333A3A;
     margin: var(--unit-large) 0;
 }
+
+/* VIDEO BACKGROUND */
+.video-bg {
+    position: relative;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    overflow: clip;
+
+    .video-bg-content {
+        padding-block: 2em;
+        z-index: 20;
+        position: relative;
+    }
+
+    .video-bg-wrapper {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: calc(100% + 30px);
+        height: calc(100% + 30px);
+        z-index: 10;
+        filter: blur(5px);
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-width: none;
+        }
+
+    }
+
+}

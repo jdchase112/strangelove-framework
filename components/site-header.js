@@ -5,7 +5,7 @@ class siteHeader extends HTMLElement {
       <!-- COMPONENT MARKUP GOES HERE -->
       <header class="site-header header-on-top-of-hero">
         <div class="site-logo">
-            <a href="index.html"><img class="fade-in" src="media/strangelove-logo.svg" width="200" height="50"></a>
+            <a href="index.html"><img src="media/strangelove-logo.svg" width="200" height="50"></a>
         </div>
         <nav class="site-nav mobile-menu">
             <button class="menu-button">
@@ -17,8 +17,8 @@ class siteHeader extends HTMLElement {
                 <span class="menu-button-text">Menu</span>
             </button>
             <ul>
-                <li class="fade-in"><a href="index.html">Home</a></li>
-                <li class="fade-in"><a href="style-guide.html">Style Guide</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="style-guide.html">Style Guide</a>
                 </li>
             </ul>
         </nav>
