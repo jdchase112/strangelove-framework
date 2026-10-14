@@ -35,15 +35,14 @@ body {
   font-family: sans-serif;
 }
 
-/* 1. The 1600px Hard Cap Frame */
-.container {
+.container-1800 {
   max-width: 1800px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
 
-.container::before {
+.container-1800::before {
   content: "";
   position: absolute;
   top: 0;
@@ -55,7 +54,7 @@ body {
   pointer-events: none;
 }
 
-.container::after {
+.container-1800::after {
   content: "";
   position: absolute;
   top: 0;

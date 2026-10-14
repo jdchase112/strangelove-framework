@@ -22,3 +22,10 @@
     margin-inline: auto;
     padding-inline: 1em;
 }
+
+.container-1800 {
+    width: 100%;
+    max-width: 1800px;
+    margin-inline: auto;
+    padding-inline: 1em;
+}

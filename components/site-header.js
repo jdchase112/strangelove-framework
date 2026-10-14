@@ -18,8 +18,7 @@ class siteHeader extends HTMLElement {
             </button>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="style-guide.html">Style Guide</a>
-                </li>
+                <li><a href="style-guide.html">Style Guide</a></li>
             </ul>
         </nav>
     </header>

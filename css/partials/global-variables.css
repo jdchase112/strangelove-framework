@@ -42,7 +42,7 @@
     --unit-xlarge: 4rem;
 
     /* SITE STRUCTURE COLORS */
-    --site-header-background-color: #161818;
+    --site-header-background-color: rgba(22, 24, 24, 0.975);
     --site-header-text-color: #fff;
 
     --site-footer-background-color: #0A0C0C;
