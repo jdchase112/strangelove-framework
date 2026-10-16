@@ -2,21 +2,170 @@
 ------ UI BUTTONS ------
 --------------------- */
 
-/* BUTTON CLASS */
+/* DEFAULT BUTTON */
 .button {
 
     display: inline-block;
-    background-color: var(--link-color, black);
+    background-color: var(--blue-button-bg, black);
     border-radius: 6px;
+    border: 2px solid var(--blue-button-bg, black);
     padding-inline: 0.8em;
     padding-block: 0.4em;
-    color: var(--text-color-3);
+    color: var(--blue-button-text);
     font-weight: 500;
     text-decoration: none;
 
     &:hover {
-        background-color: var(--link-color-hover, black);
-        color: white;
+        background-color: var(--blue-button-bg-hover, black);
+        border: 2px solid var(--blue-button-bg-hover, black);
+        color: var(--blue-button-text-hover, white);
+    }
+
+}
+
+/* OUTLINED BUTTON */
+.outlined-button {
+
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid var(--blue-button-bg, black);
+    padding-inline: 0.8em;
+    padding-block: 0.4em;
+    color: var(--blue-button-bg, black);
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--blue-button-bg-hover, black);
+        border: 2px solid var(--blue-button-bg-hover, black);
+        color: var(--blue-button-text-hover, white);
+    }
+
+}
+
+/* BLUE BUTTON */
+.blue-button {
+
+    display: inline-block;
+    background-color: var(--blue-button-bg, black);
+    border-radius: 6px;
+    border: 2px solid var(--blue-button-bg, black);
+    padding-inline: 0.8em;
+    padding-block: 0.4em;
+    color: var(--blue-button-text);
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--blue-button-bg-hover, black);
+        border: 2px solid var(--blue-button-bg-hover, black);
+        color: var(--blue-button-text-hover, white);
+    }
+
+}
+
+/* BLUE OUTLINED BUTTON */
+.blue-outlined-button {
+
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid var(--blue-button-bg, black);
+    padding-inline: 0.8em;
+    padding-block: 0.4em;
+    color: var(--blue-button-bg, black);
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--blue-button-bg-hover, black);
+        border: 2px solid var(--blue-button-bg-hover, black);
+        color: var(--blue-button-text-hover, white);
+    }
+
+}
+
+/* RED BUTTON */
+.red-button {
+
+    display: inline-block;
+    background-color: var(--red-button-bg, black);
+    border-radius: 6px;
+    border: 2px solid var(--red-button-bg, black);
+    padding-inline: 0.8em;
+    padding-block: 0.4em;
+    color: var(--red-button-text);
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--red-button-bg-hover, black);
+        border: 2px solid var(--red-button-bg-hover, black);
+        color: var(--red-button-text-hover, white);
+    }
+
+}
+
+/* RED OUTLINED BUTTON */
+.red-outlined-button {
+
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid var(--red-button-bg, black);
+    padding-inline: 0.8em;
+    padding-block: 0.4em;
+    color: var(--red-button-bg, black);
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--red-button-bg-hover, black);
+        border: 2px solid var(--red-button-bg-hover, black);
+        color: var(--red-button-text-hover, white);
+    }
+
+}
+
+/* YELLOW BUTTON */
+.yellow-button {
+
+    display: inline-block;
+    background-color: var(--yellow-button-bg, black);
+    border-radius: 6px;
+    border: 2px solid var(--yellow-button-bg, black);
+    padding-inline: 0.8em;
+    padding-block: 0.4em;
+    color: var(--yellow-button-text);
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--yellow-button-bg-hover, black);
+        border: 2px solid var(--yellow-button-bg-hover, black);
+        color: var(--yellow-button-text-hover, white);
+    }
+
+}
+
+/* YELLOW OUTLINED BUTTON */
+.yellow-outlined-button {
+
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid var(--yellow-button-bg, black);
+    padding-inline: 0.8em;
+    padding-block: 0.4em;
+    color: var(--yellow-button-bg, black);
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        background-color: var(--yellow-button-bg-hover, black);
+        border: 2px solid var(--yellow-button-bg-hover, black);
+        color: var(--yellow-button-text-hover, white);
     }
 
 }

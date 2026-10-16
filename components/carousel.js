@@ -24,7 +24,7 @@ const swiper = new Swiper('.swiper', {
     pauseOnMouseEnter: true,
     disableOnInteraction: false,
   },
-  mousewheel: true,
+  mousewheel: false,
   observer: true,
   observeParents: true,
 
@@ -34,7 +34,7 @@ const swiper = new Swiper('.swiper', {
         if (this.autoplay) {
           this.autoplay.stop();
           this.autoplay.start();
-          this.autoplay.run();
+          // this.autoplay.run();
         }
       }, 150);
     },

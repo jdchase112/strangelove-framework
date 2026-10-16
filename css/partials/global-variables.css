@@ -4,21 +4,65 @@
 
 :root {
 
-    /* MAIN UI COLORS */
-    --body-background-color: #161818;
-    --strangelove-background-color: #161818;
-    --body-text-color: #A9B5B8;
-    --section-heading-text-color: #E1ECEE;
-
+    /* BRAND COLORS */
     --text-color-1: #fff;
     --text-color-2: #E1ECEE;
     --text-color-3: #D7E3E4;
     --text-color-4: #C7D1D2;
     --text-color-5: #A9B5B8;
+    --text-color-6: #BABABA;
+    --text-color-7: #788081;
+
+    --strangelove-lightest-blue: #D7E3E4;
+    --strangelove-light-blue: #8CD3DD;
+    --strangelove-blue: #006877;
+    --strangelove-dark-blue: #00434d;
+
+    --strangelove-lightest-red: #F4ECEC;
+    --strangelove-light-red: #D9B7BD;
+    --strangelove-red: #AF3A55;
+    --strangelove-dark-red: #81082E;
+
+    --strangelove-light-yellow: #F6EB95;
+    --strangelove-yellow: #EBD417;
+    --strangelove-dark-yellow: #B19F08;
+
+    --strangelove-light-orange: #F8BFA5;
+    --strangelove-orange: #E6643B;
+    
+    --strangelove-light-pink: #D9B7BD;
+    --strangelove-pink: #BF8A94;
+
+    --strangelove-white: #FFF;
+    --strangelove-black: #0A0C0C;
+
+    --strangelove-primary-background: #161818;
+    --strangelove-secondary-background: #1D2121;
+
+    /* MAIN UI COLORS */
+    --body-background-color: var(--strangelove-primary-background);
+    --body-text-color: var(--text-color-5);
+    --section-heading-text-color: var(--text-color-2);
 
     /* LINK COLORS */
     --link-color: #006877;
     --link-color-hover: #00434d;
+
+    /* BUTTON COLORS */
+    --blue-button-bg: var(--strangelove-blue);
+    --blue-button-text: var(--strangelove-lightest-blue);
+    --blue-button-bg-hover: var(--strangelove-dark-blue);
+    --blue-button-text-hover: var(--strangelove-white);
+
+    --red-button-bg: var(--strangelove-red);
+    --red-button-text: var(--strangelove-lightest-red);
+    --red-button-bg-hover: var(--strangelove-dark-red);
+    --red-button-text-hover: var(--strangelove-white);
+
+    --yellow-button-bg: var(--strangelove-yellow);
+    --yellow-button-text: var(--strangelove-black);
+    --yellow-button-bg-hover: var(--strangelove-dark-yellow);
+    --yellow-button-text-hover: var(--strangelove-black);
 
     /* SANS SERIF FONT FAMILY */
     --sans-serif: "Balto", Helvetica, Arial, sans-serif;
@@ -27,15 +71,17 @@
     --serif: "garamond-premier-pro-caption", Georgia, Times, serif;
 
     /* CONDENSED FONT FAMILY */
-    --condensed: "franklin-gothic-condensed";
-    --compressed: "franklin-gothic-urw-comp";
+    --condensed: "franklin-gothic-condensed", sans-serif;
+
+    /* COMPRESSED FONT FAMILY */
+    --compressed: "franklin-gothic-urw-comp", sans-serif;
 
     /* DEFINE FONTS */
     --font-body: var(--sans-serif);
     --font-headings: var(--sans-serif);
 
     /* SIZING UNITS */
-    --unit-xsmall-: 0.5rem;
+    --unit-xsmall: 0.5rem;
     --unit-small: 1rem;
     --unit-medium: 2rem;
     --unit-large: 3rem;
@@ -43,13 +89,13 @@
 
     /* SITE STRUCTURE COLORS */
     --site-header-background-color: rgba(22, 24, 24, 0.975);
-    --site-header-text-color: #fff;
+    --site-header-text-color: var(--strangelove-white);
 
-    --site-footer-background-color: #0A0C0C;
-    --site-footer-text-color: #fff;
+    --site-footer-background-color: var(--strangelove-black);
+    --site-footer-text-color: var(--text-color-1);
 
-    --site-hero-background-color: #1D2121;
-    --site-hero-text-color: #fff;
+    --site-hero-background-color: var(--strangelove-secondary-background);
+    --site-hero-text-color: var(--text-color-1);
 
     --sitenav-drawer-menu-background-color: #eee;
     --sitenav-drawer-menu-text-color: #000;

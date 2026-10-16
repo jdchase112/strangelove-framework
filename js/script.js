@@ -22,6 +22,6 @@ mytargets.forEach((el) => {
 });
 
 // REMOVE SPLASH DELAY
-setTimeout(() => {
-    document.documentElement.style.setProperty("--splash-delay", "0.2s");
-}, 4000);
+// setTimeout(() => {
+//     document.documentElement.style.setProperty("--splash-delay", "0.2s");
+// }, 4000);
