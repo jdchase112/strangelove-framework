@@ -5,13 +5,11 @@
 :root {
 
     /* BRAND COLORS */
-    --text-color-1: #fff;
-    --text-color-2: #E1ECEE;
-    --text-color-3: #D7E3E4;
-    --text-color-4: #C7D1D2;
-    --text-color-5: #A9B5B8;
-    --text-color-6: #BABABA;
-    --text-color-7: #788081;
+    --text-color-0: #FFFFFF;
+    --text-color-1: #E1ECEE;
+    --text-color-2: #D7E3E4;
+    --text-color-3: #A9B5B8;
+    --text-color-4: #859093;
 
     --strangelove-lightest-blue: #D7E3E4;
     --strangelove-light-blue: #8CD3DD;
@@ -41,8 +39,8 @@
 
     /* MAIN UI COLORS */
     --body-background-color: var(--strangelove-primary-background);
-    --body-text-color: var(--text-color-5);
-    --section-heading-text-color: var(--text-color-2);
+    --body-text-color: var(--text-color-3);
+    --section-heading-text-color: var(--text-color-1);
 
     /* LINK COLORS */
     --link-color: #006877;
@@ -92,10 +90,10 @@
     --site-header-text-color: var(--strangelove-white);
 
     --site-footer-background-color: var(--strangelove-black);
-    --site-footer-text-color: var(--text-color-1);
+    --site-footer-text-color: var(--text-color-0);
 
     --site-hero-background-color: var(--strangelove-secondary-background);
-    --site-hero-text-color: var(--text-color-1);
+    --site-hero-text-color: var(--text-color-0);
 
     --sitenav-drawer-menu-background-color: #eee;
     --sitenav-drawer-menu-text-color: #000;

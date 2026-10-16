@@ -18,7 +18,7 @@
   left: 0;
   height: 100%;
   width: 300px;
-  background-image: linear-gradient(90deg, var(--strangelove-background-color) 0%, rgb(0 0 0 / 0) 100%);
+  background-image: linear-gradient(90deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) 100%);
   z-index: 100;
   pointer-events: none;
 }
@@ -30,7 +30,7 @@
   right: 0;
   height: 100%;
   width: 250px;
-  background-image: linear-gradient(270deg, var(--strangelove-background-color) 0%, rgb(0 0 0 / 0) 100%);
+  background-image: linear-gradient(270deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) 100%);
   z-index: 100;
   pointer-events: none;
 }
