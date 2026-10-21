@@ -14,7 +14,7 @@
     --strangelove-lightest-blue: #D7E3E4;
     --strangelove-light-blue: #8CD3DD;
     --strangelove-blue: #006877;
-    --strangelove-dark-blue: #00434d;
+    --strangelove-dark-blue: #00434D;
 
     --strangelove-lightest-red: #F4ECEC;
     --strangelove-light-red: #D9B7BD;
@@ -32,6 +32,8 @@
     --strangelove-pink: #BF8A94;
 
     --strangelove-white: #FFF;
+    --strangelove-light-gray: #A9B5B8;
+    --strangelove-gray: #333A3A;
     --strangelove-black: #0A0C0C;
 
     --strangelove-primary-background: #161818;
@@ -47,6 +49,11 @@
     --link-color-hover: #00434d;
 
     /* BUTTON COLORS */
+    --white-button-bg: var(--strangelove-white);
+    --white-button-text: var(--strangelove-black);
+    --white-button-bg-hover: var(--strangelove-light-gray);
+    --white-button-text-hover: var(--strangelove-white);
+
     --blue-button-bg: var(--strangelove-blue);
     --blue-button-text: var(--strangelove-lightest-blue);
     --blue-button-bg-hover: var(--strangelove-dark-blue);
@@ -60,7 +67,7 @@
     --yellow-button-bg: var(--strangelove-yellow);
     --yellow-button-text: var(--strangelove-black);
     --yellow-button-bg-hover: var(--strangelove-dark-yellow);
-    --yellow-button-text-hover: var(--strangelove-black);
+    --yellow-button-text-hover: var(--strangelove-white);
 
     /* SANS SERIF FONT FAMILY */
     --sans-serif: "Balto", Helvetica, Arial, sans-serif;

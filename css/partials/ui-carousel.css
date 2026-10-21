@@ -8,7 +8,7 @@
 
 .carousel-container h2 {
     position: relative;
-    z-index: 200;
+    z-index: 75;
 }
 
 .carousel-container::before {
@@ -19,7 +19,7 @@
   height: 100%;
   width: 300px;
   background-image: linear-gradient(90deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) 100%);
-  z-index: 100;
+  z-index: 50;
   pointer-events: none;
 }
 
@@ -31,7 +31,7 @@
   height: 100%;
   width: 250px;
   background-image: linear-gradient(270deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) 100%);
-  z-index: 100;
+  z-index: 50;
   pointer-events: none;
 }
 

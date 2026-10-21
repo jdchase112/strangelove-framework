@@ -11,10 +11,15 @@ body {
 
 /* SET FONT AND WEIGHT FOR HEADINGS */
 h1,
-h2,
-h3 {
+h2 {
     font-family: var(--font-headings);
     font-weight: 600;
+    margin: 0;
+}
+
+h3 {
+    font-family: var(--font-headings);
+    font-weight: 500;
     margin: 0;
 }
 
@@ -60,4 +65,14 @@ pre code {
     border-radius: 10px;
     border: 1px solid #333A3A;
     white-space: pre-wrap;
+}
+
+/* SECTION HEADING STYLING */
+
+.section-heading {
+    color: var(--text-color-1);
+    text-transform: uppercase;
+    font-family: var(--sans-serif), sans-serif;
+    font-weight: 600;
+    font-size: 3.125em;
 }
