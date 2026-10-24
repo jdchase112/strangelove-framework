@@ -18,9 +18,18 @@
   left: 0;
   height: 100%;
   width: 300px;
-  background-image: linear-gradient(90deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) 100%);
+  background-image: linear-gradient(90deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) clamp(0%, 10vw, 100%));
   z-index: 50;
   pointer-events: none;
+
+  /* @media (width > 1200px) {
+    background-image: linear-gradient(90deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) 100%);
+  }
+
+  @media (width <= 1200px) {
+    background-image: linear-gradient(90deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) clamp(25%, 4vw, 100%));
+  } */
+
 }
 
 .carousel-container::after {
@@ -30,9 +39,18 @@
   right: 0;
   height: 100%;
   width: 250px;
-  background-image: linear-gradient(270deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) 100%);
+    background-image: linear-gradient(270deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) clamp(0%, 10vw, 100%));
   z-index: 50;
   pointer-events: none;
+
+  /* @media (width > 1200px) {
+    background-image: linear-gradient(270deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) 100%);
+  }
+
+  @media (width <= 1200px) {
+    background-image: linear-gradient(270deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) clamp(50%, 4vw, 100%));
+  } */
+
 }
 
 .inner-carousel-container {
@@ -47,8 +65,8 @@
 }
 
 .swiper-slide {
-  width: 285px !important;
-  height: 500px !important;
+  width: clamp(125px, 20vw, 285px) !important;
+  height: clamp(240px, 40vw, 500px) !important;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;

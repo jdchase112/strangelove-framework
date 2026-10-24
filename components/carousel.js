@@ -10,6 +10,7 @@ if (wrapper) {
 
 const swiper = new Swiper('.swiper', {
   slidesPerView: 'auto',
+  watchSlidesProgress: true,
   spaceBetween: 20,
   initialSlide: 1,
   loop: true,
