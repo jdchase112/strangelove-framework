@@ -6,7 +6,7 @@
   padding-inline: 20px;
 }
 
-.carousel-container h2 {
+.carousel-container h2, .carousel-container .section-eyebrow {
     position: relative;
     z-index: 75;
 }

@@ -352,7 +352,8 @@ h2 {
 
 /* SECTION STYLING */
 section {
-  padding-block: var(--unit-medium);
+  padding-block-start: clamp(2.5em, 6vw, 5em);
+  padding-block-end: clamp(1.5em, 6vw, 3em);
 }
 
 .sidebar nav {

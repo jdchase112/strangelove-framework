@@ -73,5 +73,15 @@ pre code {
     text-transform: uppercase;
     font-family: var(--sans-serif), sans-serif;
     font-weight: 600;
-    font-size: 3.125em;
+    font-size: clamp(1.5em, 6vw, 3.125em);
+    margin-top: 0;
+}
+
+.section-eyebrow {
+    color: var(--strangelove-light-blue);
+    text-transform: uppercase;
+    font-family: var(--sans-serif), sans-serif;
+    font-weight: 500;
+    font-size: clamp(0.8em, 3.5vw, 1.125em);
+    margin-bottom: 0;
 }

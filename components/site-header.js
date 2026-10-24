@@ -5,7 +5,7 @@ class siteHeader extends HTMLElement {
       <!-- COMPONENT MARKUP GOES HERE -->
       <header class="site-header header-on-top-of-hero">
         <div class="site-logo">
-            <a href="index.html"><img src="media/strangelove-logo.svg" width="200" height="50"></a>
+            <a href="index.html"><img src="media/S Logo.svg" width="41" height="41"></a>
         </div>
         <nav class="site-nav mobile-menu">
             <button class="menu-button">

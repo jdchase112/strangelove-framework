@@ -102,11 +102,11 @@
 
 /* VIEW TRANSITIONS */
 
-@view-transition {
+/* @view-transition {
   navigation: auto;
-}
+} */
 
-.movie-card {
+/* .movie-card {
     view-transition-name: moviecard;
 }
 
@@ -121,7 +121,7 @@
 
 .page-film .movie-card {
     scale: 1.5;
-}
+} */
 
 /* :root {
     --view-animation-duration: 2s;
