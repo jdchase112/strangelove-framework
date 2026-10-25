@@ -21,15 +21,7 @@
   background-image: linear-gradient(90deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) clamp(0%, 10vw, 100%));
   z-index: 50;
   pointer-events: none;
-
-  /* @media (width > 1200px) {
-    background-image: linear-gradient(90deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) 100%);
-  }
-
-  @media (width <= 1200px) {
-    background-image: linear-gradient(90deg, var(--strangelove-primary-background) 0%, rgb(0 0 0 / 0) clamp(25%, 4vw, 100%));
-  } */
-
+  
 }
 
 .carousel-container::after {

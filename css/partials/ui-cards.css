@@ -373,7 +373,7 @@
         font-family: var(--sans-serif);
         color: var(--text-color-2);
         margin-bottom: 1em;
-        letter-spacing: -2px;
+        letter-spacing: -0.02em;
 
         @media (width <=768px) {
             margin-top: 0.65em;
