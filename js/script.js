@@ -21,6 +21,19 @@ mytargets.forEach((el) => {
     myobserver.observe(el);
 });
 
+const gridBg = document.querySelector('.grid-background');
+
+if (gridBg) {
+    window.addEventListener('mousemove', (e) => {
+        const rect = gridBg.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        gridBg.style.setProperty('--mouse-x', `${x}px`);
+        gridBg.style.setProperty('--mouse-y', `${y}px`);
+    });
+}
+
 // REMOVE SPLASH DELAY
 // setTimeout(() => {
 //     document.documentElement.style.setProperty("--splash-delay", "0.2s");
