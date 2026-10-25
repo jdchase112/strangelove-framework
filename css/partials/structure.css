@@ -278,27 +278,55 @@
 /* SITE FOOTER STYLING */
 .site-footer {
   background-color: var(--site-footer-background-color, white);
-  padding-block: var(--unit-small);
+  padding-block: 4em;
+
+  .container-1200 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 3em;
+  }
 
   /* REMOVE UNDERLINE FROM ALL FOOTER TEXT LINKS */
   a {
     text-decoration: none;
-    color: var(--site-footer-text-color, black)
+    color: var(--site-footer-text-color, black);
+    font-size: clamp(0.8em, 5vw, 1.5em);
+    font-family: var(--compressed);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.25;
+  }
+
+  li {
+    text-align: right;
+  }
+
+  @media (width <= 799px) {
+
+    .container-1200 {
+      gap: 1em;
     }
 
-  .footer-nav {
-    font-family: var(--font-headings);
-    color: var(--site-footer-text-color, black);
+    img {
+      display: block;
+      margin: 0 auto;
+    }
 
     ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      margin: 0;
-      padding: 0;
+      display: flex;
+      gap: clamp(0.75em, 5vw, 2em);
+      justify-content: center;
+      width: fit-content;
+      margin-inline: auto;
     }
 
   }
@@ -384,6 +412,13 @@
   z-index: 50;
   pointer-events: none;
   
+}
+
+/* SUBPAGE HERO STYLING */
+.sub-hero {
+  background-color: var(--site-hero-background-color);
+  padding-block: 10em;
+  color: var(--site-hero-text-color);
 }
 
 /* HERO WITH HEADER ON TOP */

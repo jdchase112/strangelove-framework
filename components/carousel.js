@@ -18,7 +18,7 @@ const swiper = new Swiper('.swiper', {
   loopAddBlankSlides: false,
   loopPreventsSliding: false,
   freeMode: {
-    enabled: false
+    enabled: false,
   },
   autoplay: {
     delay: 2500,
