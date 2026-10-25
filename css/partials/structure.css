@@ -363,7 +363,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: clamp(50svh, 80vw, 105svh);
+  height: clamp(55svh, 80vw, 105svh);
   width: 100%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 25%, #161818 95%);
   z-index: 50;
