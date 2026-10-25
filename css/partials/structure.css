@@ -275,7 +275,6 @@
   background-color: transparent;
 }
 
-
 /* SITE FOOTER STYLING */
 .site-footer {
   background-color: var(--site-footer-background-color, white);
@@ -320,10 +319,6 @@
   .video-bg-content {
     position: relative;
     z-index: 75;
-  }
-
-  img {
-    margin-top: 1em;
   }
 
   h1 {
