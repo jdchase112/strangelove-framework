@@ -330,10 +330,11 @@
     font-weight: 400;
     color: var(--text-color-0);
     letter-spacing: -0.02em;
-    font-size: clamp(0.90em, 3vw, 2em);
+    font-size: clamp(0.9em, 3vw, 2em);
     line-height: 1.25;
-    max-width: 46ch;
+    max-width: 50ch;
     text-align: left;
+    text-wrap: pretty;
 
     strong {
       font-weight: 500;
