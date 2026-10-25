@@ -12,7 +12,7 @@ hr {
 /* VIDEO BACKGROUND */
 .video-bg {
     position: relative;
-    min-height: clamp(60svh, 80vw, 105svh);
+    min-height: clamp(70svh, 80vw, 105svh);
     display: grid;
     place-items: center;
     overflow: clip;
