@@ -335,6 +335,10 @@
       font-weight: 500;
     }
 
+    @media (width <= 448px) {
+      text-align: center;
+    }
+
   }
 
   .grid-background {
