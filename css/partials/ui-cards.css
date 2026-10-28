@@ -47,6 +47,7 @@
 /* CARD BORDER STYLING */
 .card-border {
   position: relative;
+  border-radius: 10px;
   display: block;
 }
 
@@ -344,7 +345,7 @@
 .spotlight-card {
     margin: 0;
     padding: 0;
-    padding-bottom: clamp(2em, 6vw, 3em);
+    padding-bottom: clamp(2em, 6vw, 6em);
 
     .card-border {
         overflow: hidden;
@@ -365,6 +366,8 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 100;
     
     h3 {
         margin: 0;

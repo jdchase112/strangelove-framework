@@ -75,6 +75,8 @@ pre code {
     font-weight: 600;
     font-size: clamp(1.5em, 6vw, 3.125em);
     margin-top: 0;
+    z-index: 2;
+    position: relative;
 }
 
 .section-eyebrow {

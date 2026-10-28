@@ -275,6 +275,11 @@
   background-color: transparent;
 }
 
+/* MAIN */
+.site-main {
+  overflow-y: clip;
+}
+
 /* SITE FOOTER STYLING */
 .site-footer {
   background-color: var(--site-footer-background-color, white);

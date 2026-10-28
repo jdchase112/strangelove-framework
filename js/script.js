@@ -21,6 +21,7 @@ mytargets.forEach((el) => {
     myobserver.observe(el);
 });
 
+// GRID MASK EFFECT
 const gridBg = document.querySelector('.grid-background');
 
 if (gridBg) {
