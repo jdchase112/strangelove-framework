@@ -9,7 +9,7 @@
 }
 
 .row>* {
-    margin-bottom: var(--unit-small);
+    margin-bottom: 1em;
 }
 
 @media (width > 768px) {
