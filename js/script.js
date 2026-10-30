@@ -22,7 +22,7 @@ mytargets.forEach((el) => {
 });
 
 // GRID MASK EFFECT
-const gridBg = document.querySelector('.grid-background');
+const gridBg = document.querySelector('.grid-background-hero, .grid-background');
 
 if (gridBg) {
     window.addEventListener('mousemove', (e) => {
