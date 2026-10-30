@@ -451,8 +451,8 @@ section {
   height: 120%;
   width: 100%;
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.00) 
-  5%, #161818 115%);
-  z-index: -20;
+  15%, #161818 100%);
+  z-index: -5;
   pointer-events: none;
   
 }

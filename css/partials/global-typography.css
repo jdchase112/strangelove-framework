@@ -84,6 +84,6 @@ pre code {
     text-transform: uppercase;
     font-family: var(--sans-serif), sans-serif;
     font-weight: 500;
-    font-size: clamp(0.775em, 3.5vw, 1.125em);
+    font-size: clamp(0.775em, 2.5vw, 1.125em);
     margin-bottom: 0;
 }

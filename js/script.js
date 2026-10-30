@@ -22,7 +22,7 @@ mytargets.forEach((el) => {
 });
 
 // GRID MASK EFFECT
-const gridBg = document.querySelector('.grid-background-hero, .grid-background');
+const gridBg = document.querySelector('.grid-background-hero');
 
 if (gridBg) {
     window.addEventListener('mousemove', (e) => {
@@ -32,6 +32,19 @@ if (gridBg) {
 
         gridBg.style.setProperty('--mouse-x', `${x}px`);
         gridBg.style.setProperty('--mouse-y', `${y}px`);
+    });
+}
+
+const gridBg2 = document.querySelector('.grid-background');
+
+if (gridBg2) {
+    window.addEventListener('mousemove', (e) => {
+        const rect = gridBg2.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        gridBg2.style.setProperty('--mouse-x', `${x}px`);
+        gridBg2.style.setProperty('--mouse-y', `${y}px`);
     });
 }
 
