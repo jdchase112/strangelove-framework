@@ -48,6 +48,19 @@ if (gridBg2) {
     });
 }
 
+const eventsMask = document.querySelector('.events-mask');
+
+if (eventsMask) {
+    window.addEventListener('mousemove', (e) => {
+        const rect = eventsMask.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        eventsMask.style.setProperty('--mouse-x', `${x}px`);
+        eventsMask.style.setProperty('--mouse-y', `${y}px`);
+    });
+}
+
 // REMOVE SPLASH DELAY
 // setTimeout(() => {
 //     document.documentElement.style.setProperty("--splash-delay", "0.2s");

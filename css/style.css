@@ -162,13 +162,29 @@
 
 .events-mask {
     position: absolute;
-    top: 0;
+    top: -2.5%;
     right: 0;
     width: 100%;
     height: 102.5%;
     z-index: -1;
     background-color: var(--strangelove-secondary-background);
-    clip-path: polygon(0% 0%, 100% 27.5%, 100% 70%, 0% 100%);
+    clip-path: polygon(0% 2.5%, 100% 25%, 100% 80%, 0% 100%);
+}
+
+.events-mask::after {
+    content: '';
+    position: absolute;
+    display: block;
+    inset: 0;
+    background-color: rgba(51, 58, 58, 0.3);
+    clip-path: polygon(0% 2.5%, 100% 25%, 100% 80%, 0% 100%);
+
+    mask-image: radial-gradient(
+        circle 350px at var(--mouse-x, -9999px) var(--mouse-y, -9999px),
+        black 0%,
+        transparent 100%
+    );
+
 }
 
 @keyframes spotlight-animation {
@@ -205,7 +221,7 @@
     left: 0;
     height: 105%;
     width: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M 24 0 L 24 48 M 0 24 L 48 24' fill='none' stroke='rgba(255,255,255,0.07)' stroke-width='2.5'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M 24 0 L 24 48 M 0 24 L 48 24' fill='none' stroke='rgba(255,255,255,0.07)' stroke-width='2'/%3E%3C/svg%3E");
     background-size: clamp(1.5rem, 5vw, 3em);
     background-position: center;
     z-index: 25;
@@ -217,7 +233,7 @@
     position: absolute;
     display: block;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M 24 0 L 24 48 M 0 24 L 48 24' fill='none' stroke='rgba(255,255,255,0.2)' stroke-width='2.5'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M 24 0 L 24 48 M 0 24 L 48 24' fill='none' stroke='rgba(255,255,255,0.2)' stroke-width='2'/%3E%3C/svg%3E");
     background-size: clamp(1.5rem, 5vw, 3em);
     background-position: center;
 
@@ -235,10 +251,10 @@
 .grid-background-events {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -5%;
     height: 110%;
-    width: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M 24 0 L 24 48 M 0 24 L 48 24' fill='none' stroke='rgba(22, 24, 24, 1)' stroke-width='2'/%3E%3C/svg%3E");
+    width: 105%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M 24 0 L 24 48 M 0 24 L 48 24' fill='none' stroke='rgba(22, 24, 24, 1)' stroke-width='1.75'/%3E%3C/svg%3E");
     background-size: clamp(3rem, 5vw, 6em);
     background-position: center;
     z-index: -1;
@@ -253,7 +269,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M 24 0 L 24 48 M 0 24 L 48 24' fill='none' stroke='rgba(29, 33, 33, 1)' stroke-width='2.5'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M 24 0 L 24 48 M 0 24 L 48 24' fill='none' stroke='rgba(29, 33, 33, 1)' stroke-width='2'/%3E%3C/svg%3E");
     background-size: clamp(1.5rem, 5vw, 3em);
     background-position: center;
     z-index: -25;
@@ -265,7 +281,7 @@
     position: absolute;
     display: block;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M 24 0 L 24 48 M 0 24 L 48 24' fill='none' stroke='rgba(51, 58, 58, 0.75)' stroke-width='2.5'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cpath d='M 24 0 L 24 48 M 0 24 L 48 24' fill='none' stroke='rgba(51, 58, 58, 0.75)' stroke-width='2'/%3E%3C/svg%3E");
     background-size: clamp(1.5rem, 5vw, 3em);
     background-position: center;
 

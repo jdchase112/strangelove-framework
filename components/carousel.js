@@ -11,7 +11,7 @@ if (wrapper) {
 const swiper = new Swiper('.swiper', {
   slidesPerView: 'auto',
   watchSlidesProgress: true,
-  spaceBetween: 20,
+  spaceBetween: 16,
   initialSlide: 1,
   loop: true,
   loopAdditionalSlides: 12,
@@ -20,14 +20,21 @@ const swiper = new Swiper('.swiper', {
   freeMode: {
     enabled: false,
   },
+
   autoplay: {
     delay: 2500,
     pauseOnMouseEnter: true,
     disableOnInteraction: false,
   },
+
   mousewheel: false,
   observer: true,
   observeParents: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
   on: {
     init: function () {
