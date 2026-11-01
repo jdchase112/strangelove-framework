@@ -54,29 +54,3 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
-const borderColors = [
-  '#128A9B',
-  '#F4E000',
-  '#E6643B',
-  '#A21C46',
-  '#BF8A94',
-];
-
-let lastColorIndex = -1;
-
-document.querySelectorAll('.movie-card').forEach((card) => {
-  card.addEventListener('mouseenter', () => {
-    let randomIndex;
-
-    // Pick a new index until it differs from the last one
-    do {
-      randomIndex = Math.floor(Math.random() * borderColors.length);
-    } while (randomIndex === lastColorIndex);
-
-    // Save the current index for the next check
-    lastColorIndex = randomIndex;
-
-    const randomColor = borderColors[randomIndex];
-    card.style.setProperty('--hover-border-color', randomColor);
-  });
-});

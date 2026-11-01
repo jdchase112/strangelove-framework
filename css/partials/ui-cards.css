@@ -42,7 +42,23 @@
         user-drag: none;
         transition: border-radius 0.15s ease-in-out;
     }
+
+    transition: transform 0.15s ease-out;
+
 }
+
+[class$="-card"]:hover {
+    transform: scale(1.015);
+}
+
+[class$="-card"]:hover .card-border::after {
+  inset: 0;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: var(--text-color-2,);
+  box-shadow: inset 0 0 15px 0 rgb(from var(--text-color-3,) r g b / 0.25);
+}
+
 
 /* CARD BORDER STYLING */
 .card-border {
@@ -536,6 +552,15 @@
     }
 
 }
+
+.film-page-card:hover .card-border::after {
+  inset: 0;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: var(--hover-border-color, #BF8A94);
+  box-shadow: inset 0 0 15px 0 rgb(from var(--hover-border-color, #BF8A94) r g b / 0.25);
+}
+
 
 .film-page-card-group {
 
