@@ -100,10 +100,6 @@
 
 .site-nav.mobile-menu {
 
-  @media (width > 768px) {
-
-  }
-
   @media (width <= 768px) {
 
   /* MENU BUTTON */
@@ -113,7 +109,9 @@
     right: 0.75em;
     left: auto;
     z-index: 1000;
-    scale: 0.9;
+    scale: 1;
+
+    transition: scale 0.2s ease-in-out;
 
     /* REMOVE DEFAULT BUTTON STYLING */
     border: none;
@@ -158,6 +156,10 @@
       left: -9999px;
     }
 
+  }
+
+  .menu-button:hover {
+    scale: 1.075;
   }
 
   ul {
@@ -369,6 +371,14 @@
     z-index: 75;
   }
 
+  img {
+    transition: scale 0.2s ease-in-out;
+  }
+
+  img:hover {
+    scale: 1.01;
+  }
+
   h1 {
     font-weight: 400;
     color: var(--text-color-0);
@@ -420,17 +430,6 @@ body:has(.header-on-top-of-hero) .hero:has(.video-bg) {
   padding-block: 0em;
 }
 
-/* CONTENT SECTION STYLING */
-.content {
-
-h2 {
-  color: var(--text-color-2);
-  text-transform: uppercase;
-  font-size: 3.125em;
-}
-
-}
-
 /* SECTION STYLING */
 section {
   padding-block-start: clamp(2.5em, 6vw, 5em);
@@ -439,8 +438,6 @@ section {
 
 .sidebar nav {
   margin-top: 2em;
-
-  /* STICK THE SIDEBAR TO THE TOP ON SCROLL */
   position: sticky;
   top: 2em;
 }
@@ -453,7 +450,95 @@ section {
   grid-column: 1 / 3;
 }
 
-/* JOURNAL SECTION STYLING */
+/* EVENTS PREVIEW SECTION STYLING */
+.events-preview {
+    position: relative;
+}
+
+.events-mask {
+    position: absolute;
+    top: -2.5%;
+    right: 0;
+    width: 100%;
+    height: 102.5%;
+    z-index: -1;
+    background-color: var(--strangelove-secondary-background);
+    clip-path: polygon(0% 2.5%, 100% 25%, 100% 80%, 0% 100%);
+}
+
+.events-mask::after {
+    content: '';
+    position: absolute;
+    display: block;
+    inset: 0;
+    background-color: rgba(51, 58, 58, 0.3);
+    clip-path: polygon(0% 2.5%, 100% 25%, 100% 80%, 0% 100%);
+
+    mask-image: radial-gradient(
+        circle 350px at var(--mouse-x, -9999px) var(--mouse-y, -9999px),
+        black 0%,
+        transparent 100%
+    );
+
+}
+
+/* CINEMA SPOTLIGHT SECTION STYLING */
+.spotlights {
+    position: relative;
+}
+
+.spotlight-graphic {
+    background-image: url('../media/spotlight-background.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    position: absolute;
+    top: -55px;
+    right: 0;
+    width: 100%;
+    height: 200%;
+    z-index: -1;
+}
+
+.spotlight-mask {
+    position: absolute;
+    top: -2.5%;
+    right: 0;
+    width: 100%;
+    height: 200%;
+    z-index: -1;
+    background-color: var(--strangelove-secondary-background);
+    clip-path: polygon(0% 15%, 100% 0%, 0% 100%, 0% 100%);
+    animation: spotlight-animation 10s ease-in-out infinite;
+}
+
+@keyframes spotlight-animation {
+
+    50% {
+        clip-path: polygon(0% 10%, 100% 0%, 0% 70%, 0% 100%);
+    }
+}
+
+/* .spotlight-shadow-1 {
+    box-shadow:
+    -35px -47.5px 0 0 var(--strangelove-secondary-background),
+    200px -47.5px 0 0 var(--strangelove-secondary-background);
+    display: block;
+}
+
+.spotlight-shadow-2 {
+    box-shadow: 35px 47.5px 0 0 var(--strangelove-secondary-background);
+    display: block;
+}
+
+.spotlight-shadow-3 {
+    box-shadow:
+    -35px -44px 0 0 var(--strangelove-primary-background),
+    400px -44px 0 0 var(--strangelove-primary-background);
+    display: block;
+} */
+
+/* JOURNAL PREVIEW SECTION STYLING */
 .journal {
   position: relative;
 }

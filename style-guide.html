@@ -2,12 +2,18 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://use.typekit.net/ikn5sqn.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strangelove Framework | Style Guide</title>
+    <title>Strangelove Framework | Home</title>
+
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/ikn5sqn.css">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
     <meta name="description"
-        content="The CSS style guide for Strangelove Cinema, an independent art cinema house dedicated to bringing auteur films to the masses without any highbrow pretension.">
+        content="This is the HTML, CSS, and JavaScript framework for Strangelove Cinema, an independent art cinema house dedicated to bringing auteur films to the masses without any highbrow pretension.">
     <!-- MAIN CSS FILE -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -523,6 +529,138 @@
 
                             <hr>
 
+                            <h2>Carousel</h2>
+
+                            <div class="carousel-container">
+                                <!-- Slider main container -->
+                                <div class="inner-carousel-container">
+
+                                    <div class="swiper">
+                                        <!-- Additional required wrapper -->
+                                        <div class="swiper-wrapper">
+
+                                            <!-- Slides -->
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.1s;">
+                                                <div class="poster-border">
+                                                    <img src="media/hardboiled.jpg" />
+                                                </div>
+                                                <h3>Hard Boiled</h3>
+                                                <p>John Woo</p>
+                                            </div>
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.2s;">
+                                                <div class="poster-border">
+                                                    <img src="media/boogienights.jpg" />
+                                                </div>
+                                                <h3>Boogie Nights</h3>
+                                                <p>Paul Thomas Anderson</p>
+                                            </div>
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.3s;">
+                                                <div class="poster-border">
+                                                    <img src="media/vertigo.jpg" />
+                                                </div>
+                                                <h3>Vertigo</h3>
+                                                <p>Alfred Hitchcock</p>
+                                            </div>
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.4s;">
+                                                <div class="poster-border">
+                                                    <img src="media/do the right thing.jpg" />
+                                                </div>
+                                                <h3>Do the Right Thing</h3>
+                                                <p>Spike Lee</p>
+                                            </div>
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.3s;">
+                                                <div class="poster-border">
+                                                    <img src="media/aclockworkorange.jpg" />
+                                                </div>
+                                                <h3>A Clockwork Orange</h3>
+                                                <p>Stanley Kubrick</p>
+                                            </div>
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.2s;">
+                                                <div class="poster-border">
+                                                    <img src="media/fallenangels.jpg" />
+                                                </div>
+                                                <h3>Fallen Angels</h3>
+                                                <p>Wong Kar-Wai</p>
+                                            </div>
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.1s;">
+                                                <div class="poster-border">
+                                                    <img src="media/fantasticplanet.jpg" />
+                                                </div>
+                                                <h3>Fantastic Planet</h3>
+                                                <p>René Laloux</p>
+                                            </div>
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.2s;">
+                                                <div class="poster-border">
+                                                    <img src="media/cityofgod.jpg" />
+                                                </div>
+                                                <h3>City of God</h3>
+                                                <p class="director-full">F. Meirelles & K. Lund</p>
+                                            </div>
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.3s;">
+                                                <div class="poster-border">
+                                                    <img src="media/cecilbdemented.jpg" />
+                                                </div>
+                                                <h3>Cecil B. Demented</h3>
+                                                <p>John Waters</p>
+                                            </div>
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.4s;">
+                                                <div class="poster-border">
+                                                    <img src="media/thething.jpg" />
+                                                </div>
+                                                <h3>The Thing</h3>
+                                                <p>John Carpenter</p>
+                                            </div>
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.3s;">
+                                                <div class="poster-border">
+                                                    <img src="media/shaft.jpg" />
+                                                </div>
+                                                <h3>Shaft</h3>
+                                                <p>Gordon Parks</p>
+                                            </div>
+
+                                            <div class="movie-card swiper-slide fade-in-from-bottom"
+                                                style="--animation-delay: 0.2s;">
+                                                <div class="poster-border">
+                                                    <img src="media/nowhere.jpg" />
+                                                </div>
+                                                <h3>Nowhere</h3>
+                                                <p>Gregg Araki</p>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- If we need navigation buttons -->
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
                             <div class="media-objects">
                                 <h2>Media Objects</h2>
                                 <h3>Journal Preview</h3>
@@ -537,9 +675,11 @@
                                         <div class="col-9">
                                             <div class="journal-preview-eyebrow">Recommendation</div>
                                             <div class="journal-preview-heading">Black Gloves and Red Lights</div>
-                                            <div class="journal-preview-description">From provocative precursors like
+                                            <div class="journal-preview-description">From provocative precursors
+                                                like
                                                 Mario Bava’s The
-                                                Girl Who Knew Too Much to sanguinary standards such as Dario Argento’s
+                                                Girl Who Knew Too Much to sanguinary standards such as Dario
+                                                Argento’s
                                                 Deep Red, Patrick
                                                 Sproull recommends twenty stylishly violent giallo ﬁlms.</div>
                                         </div>
@@ -558,7 +698,8 @@
                                             <div class="journal-preview-heading">Stanley Kubrick Criterion Box Set
                                                 Coming in October
                                             </div>
-                                            <div class="journal-preview-description">The Criterion Collection is about
+                                            <div class="journal-preview-description">The Criterion Collection is
+                                                about
                                                 to give Stanley
                                                 Kubrick fans everything they’ve asked for: All 13 of the director’s
                                                 features in one box
@@ -579,17 +720,19 @@
                                             <div class="journal-preview-heading">Willem Dafoe reflects on his most
                                                 memorable roles
                                             </div>
-                                            <div class="journal-preview-description">As Willem Dafoe delivers some of
+                                            <div class="journal-preview-description">As Willem Dafoe delivers some
+                                                of
                                                 the best work of
                                                 his career in Late Fame, the actor speaks about many of his most
                                                 memorable roles, from
-                                                Wild at Heart and To Live and Die in L.A. to The Lighthouse and more.
+                                                Wild at Heart and To Live and Die in L.A. to The Lighthouse and
+                                                more.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <h3>Film Page Cards</h3>
+                                <h3>Film Page Tiles</h3>
 
                                 <div class="film-page-card-group">
 
@@ -608,10 +751,12 @@
                                                         <div class="film-page-heading">A Clockwork Orange</div>
                                                         <div class="film-page-description">In a near-future Britain,
                                                             young
-                                                            Alexander DeLarge and his pals get their kicks beating and
+                                                            Alexander DeLarge and his pals get their kicks beating
+                                                            and
                                                             anyone
                                                             they
-                                                            please. The state gives an incarcerated Alex the option to
+                                                            please. The state gives an incarcerated Alex the option
+                                                            to
                                                             undergo
                                                             an
                                                             invasive procedure.
@@ -632,9 +777,12 @@
                                                     <div class="two-thirds">
                                                         <div class="film-page-eyebrow">Paul Thomas Anderson</div>
                                                         <div class="film-page-heading">Boogie Nights</div>
-                                                        <div class="film-page-description">In 1977, an idealistic porn
-                                                            producer and his promising protege try to catch up with the
-                                                            end of an era before their never-ending party collides with
+                                                        <div class="film-page-description">In 1977, an idealistic
+                                                            porn
+                                                            producer and his promising protege try to catch up with
+                                                            the
+                                                            end of an era before their never-ending party collides
+                                                            with
                                                             cold, hard reality.
                                                         </div>
                                                     </div>
@@ -655,13 +803,18 @@
                                                         </div>
                                                     </div>
                                                     <div class="two-thirds">
-                                                        <div class="film-page-eyebrow">Fernando Meirelles & Kátia Lund
+                                                        <div class="film-page-eyebrow">Fernando Meirelles & Kátia
+                                                            Lund
                                                         </div>
                                                         <div class="film-page-heading">City of God</div>
-                                                        <div class="film-page-description">In poverty-stricken 1970s Rio
-                                                            de Janeiro, two young men choose different paths. Rocket is
-                                                            a photographer who documents the drug-related violence of
-                                                            his neighborhood, while José “Zé” Pequeno is a drug kingpin
+                                                        <div class="film-page-description">In poverty-stricken 1970s
+                                                            Rio
+                                                            de Janeiro, two young men choose different paths. Rocket
+                                                            is
+                                                            a photographer who documents the drug-related violence
+                                                            of
+                                                            his neighborhood, while José “Zé” Pequeno is a drug
+                                                            kingpin
                                                             diving into a life of crime.
                                                         </div>
                                                     </div>
@@ -680,10 +833,14 @@
                                                     <div class="two-thirds">
                                                         <div class="film-page-eyebrow">Spike Lee</div>
                                                         <div class="film-page-heading">Do the Right Thing</div>
-                                                        <div class="film-page-description">Sal is the Italian owner of a
-                                                            pizzeria in Brooklyn. A local gets upset when he sees that
-                                                            the pizzeria's Wall of Fame exhibits only Italian actors.
-                                                            The wall becomes a symbol of racism and hate, and tensions
+                                                        <div class="film-page-description">Sal is the Italian owner
+                                                            of a
+                                                            pizzeria in Brooklyn. A local gets upset when he sees
+                                                            that
+                                                            the pizzeria's Wall of Fame exhibits only Italian
+                                                            actors.
+                                                            The wall becomes a symbol of racism and hate, and
+                                                            tensions
                                                             rise.
 
                                                         </div>
@@ -698,17 +855,177 @@
 
                             </div>
 
+                            <h3>Event Schedule List</h3>
+                            <div class="event-schedule-list">
+                                <ul>
+                                    <li>
+                                        <div class="event-date">
+                                            Monday, October 5th
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-title">The Birds</div>
+                                            <div class="event-time">9:30 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-date">
+                                            Tuesday, October 6th
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-title">Rear Window</div>
+                                            <div class="event-time">9:30 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-date">
+                                            Wednesday, October 7th
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-title">North by Northwest</div>
+                                            <div class="event-time">9:30 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-date">
+                                            Thursday, October 8th
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-title">Dial M for Murder</div>
+                                            <div class="event-time">9:30 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-date">
+                                            Friday, October 9th
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-title">Rope</div>
+                                            <div class="event-time">9:30 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-date">
+                                            Saturday, October 10th
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-title">Vertigo</div>
+                                            <div class="event-time">9:30 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-date">
+                                            Sunday, October 11th
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-title">Psycho</div>
+                                            <div class="event-time">9:30 PM</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="caption" style="margin-bottom: 1.5em;">
+                                Alfred Hitchcock, Master of Suspense: 7 Day Director Retrospective
+                            </div>
+                            <div class="event-schedule-list">
+                                <ul>
+                                    <li>
+                                        <div class="event-date">
+                                            Saturday, October 3rd
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-title">Serpico</div>
+                                            <div class="event-time">9:00 AM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-item">
+                                            <div class="event-title">Dog Day Afternoon</div>
+                                            <div class="event-time">12:30 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-item">
+                                            <div class="event-title">Network</div>
+                                            <div class="event-time">3:00 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-item">
+                                            <div class="event-title">12 Angry Men</div>
+                                            <div class="event-time">6:30 PM</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="caption" style="margin-bottom: 1.5em;">
+                                Sidney Lumet, Chameleon Auteur: 4 Film Marathon Screening
+                            </div>
+                            <div class="event-schedule-list">
+                                <ul>
+                                    <li>
+                                        <div class="event-date">
+                                            Friday, October 16th
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-title">Mars Attacks!</div>
+                                            <div class="event-time">7:00 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-item">
+                                            <div class="event-title">Braindead</div>
+                                            <div class="event-time">9:30 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-date">
+                                            Saturday, October 17th
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-title">The Toxic Avenger</div>
+                                            <div class="event-time">7:00 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-item">
+                                            <div class="event-title">Pink Flamingos</div>
+                                            <div class="event-time">9:30 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-date">
+                                            Sunday, October 18th
+                                        </div>
+                                        <div class="event-item">
+                                            <div class="event-title">Phantom of the Paradise</div>
+                                            <div class="event-time">7:00 PM</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="event-item">
+                                            <div class="event-title">The Rocky Horror Picture Show</div>
+                                            <div class="event-time">9:30 PM</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="caption" style="margin-bottom: 1.5em;">
+                                Camp Classics Weekend: 3 Night Film Festival
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
+                </div>
 
         </section>
 
     </main>
 
     <site-footer></site-footer>
+
+    <!-- SWIPER CAROUSEL -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="components/carousel.js"></script>
 
     <!-- MAIN JS FILE -->
     <script src="js/script.js" type="module"></script>

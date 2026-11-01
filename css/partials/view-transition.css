@@ -1,0 +1,29 @@
+/* --------------------------
+------ VIEW TRANSITION ------
+-------------------------- */
+
+/* VIEW TRANSITION TEST */
+/* @view-transition {
+  navigation: auto;
+} */
+
+/* .movie-card {
+    view-transition-name: moviecard;
+}
+
+::view-transition-group(moviecard) {
+    animation-duration: 5s;
+}
+
+::view-transition-old(moviecard), 
+::view-transition-new(moviecard) {
+    block-size: 100%;
+}
+
+.page-film .movie-card {
+    scale: 1.5;
+} */
+
+/* :root {
+    --view-animation-duration: 2s;
+} */
